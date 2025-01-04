@@ -1,6 +1,6 @@
 # minimalfab-design-contest-2024
 
-This entry consists of a 5-stage binary ripple counter. A especially high component density is achieved through special implementation of the D-Flip-Flop and XOR gate required for each stage.
+This entry consists of a 5-stage binary ripple counter. A especially high logic density is achieved through special implementation of the D-Flip-Flop and XOR gate required for each stage.
 
 The DFFs are implemented as two dynamic latches, meaning a capacitor (here in the form of inherent gate capacitance) is used to store a bit of information. This results in a compact (and fast) implementation requiring only 8 transistor pairs, but has the downside of the data in the DFF erasing itself due to self-discharge of the capacitance over time. This means a **minimum** clock speed of 2.5kHz is required to refresh the data in the DFF regularly.
 
